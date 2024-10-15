@@ -1,0 +1,44 @@
+~ tutorial
+System: Press E To Talk When U Go To The Sign, Left Mouse To Attack, And ASWD To Move, Press Space To Skip This Dialog
+=> END
+
+~ start1
+System: Defeat 1 or more slime, then Go To Zoe's House
+=> END
+
+~ start2
+System: Just Defeat the Slime First
+=> END
+
+~ start3
+System: Maybe Zoe's isn't home, Go to the east of the forest to go to the cave
+=> END
+
+~ forest_sign
+System: EAST OF THE FOREST
+=> END
+
+~ door_cave
+You: This Is Zoe Sign I Think He Go To The Cave
+- I must find him
+	set Global.Go_to_cave = true
+- I think Cave Is A lil Bit Creepy => END
+=> END
+
+~ bos
+You: i can't find Zoe
+You: Wait I feel Dizzy
+set Global.Go_to_win = true
+=> END
+
+~ WIN
+System: Hahahaha, Maybe you ask, why are you here, you need to know that you have schizofernia, it makes you have a friend named Zoe, in reality you are just dreaming in your sleep, and now you are free from the disease, thank you for fighting all this time
+- ...
+	System: And Now, Where'd You Go
+	- I Wanna Dream Again
+		System: Enjoy Ur Dream 
+		set Global.Go_back_dream = true
+	- Just Freedom...
+		System: As U Want...
+		set Global.Freedom = true
+=> END
